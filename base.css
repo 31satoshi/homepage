@@ -298,6 +298,22 @@ div#last p {
 	text-align:center;		/*センタリング*/
 }
 
+/*スマホサイズでフッターを消す*/
+@media screen and (max-width:600px) {
+    footer #button {
+    	height: 0em;
+    }
+    footer #button:hover {
+        height: 0em;
+    }
+    footer #container {
+        height: 0em;
+    }
+    footer {
+        height: 0em;
+    }
+}
+
 /*============================================
 背景(星空画像)と本文(半透明青)を重ねるやつ
 ============================================*/
