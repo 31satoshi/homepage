@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*============================================
+全般的なスタイル
+カラー: https://coolors.co/palettes/trending
+h2:見出し
+a:リンク
+============================================*/
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
+body {
+	color: #ccdbdc;	/* 文字色変更 */
+	background-color:#000000;	/*ページ全体の背景色*/
+	background-image:url("img/yozora.jpg");	/*ページ全体の背景画像*/
+	background-size: cover; /*背景画像の全画面表示*/
+	/* background-repeat: no-repeat; */
+    font-size:18px;			/* フォントサイズ変更 */
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;	/* フォント変更 */
+	line-height:2;		/* 行間変更 */
+}
+h1 {
+	clear: both;
+	color: #ccdbdc;		/*見出しの文字色*/
+	/* background: #003249;	/*見出しの背景色*/
+	/* -webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。#00bfff or #ccdbdc*/
+	/* box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+	text-align:center;		/*テキストをセンター揃えにする*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	padding: 10px 30px;		/*上下、左右への余白*/
+}
+h2 {
+	clear: both;
+	color: #ccdbdc;		/*見出しの文字色*/
+	/* background: #003249;	/*見出しの背景色*/
+	/* -webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	/* box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	padding: 0px 30px;		/*上下、左右への余白*/
+	margin-bottom: 5px;
+}
+h2b {
+	clear: both;
+	color: #ccdbdc;		/*見出しの文字色*/
+	background: #003249;	/*見出しの背景色*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	padding: 0px 30px;		/*上下、左右への余白*/
+	margin-bottom: 5px;
+}
+h3 {
+	clear: both;
+	color: #ccdbdc;		/*見出しの文字色*/
+	/* background: #003249;	/*見出しの背景色*/
+	/* -webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	/* box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	padding: 0px 30px;		/*上下、左右への余白*/
+	margin-bottom: 5px;
+}
+a {
+	color: #ccdbdc;	/*リンクテキストの色*/
+    text-decoration: none;
+	-webkit-transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
+	transition: 0.5s;			/*同上*/
+}
+a:hover {
+	color: #ff6700;	/*マウスオン時の文字色*/
+}
+
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+a:hover img {opacity: 0.6}
+
+/*============================================
+タイトル
+https://miya-system-works.com/blog/detail/html-sample-layout/
+============================================*/
+/* container */
+.wrapper{
+    width:100%;
+    background-image:url(img/title2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+.wrapper .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+.wrapper .content .heading{
+    margin:0px 0px 20px 0px;
+    color:#ffffff;
+    font-size: 54px;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.wrapper .content .list-item {
+    /* padding:30px; */
+    line-height:1.8rem;
+    color:#ffffff;
+    text-align:center;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list-item {
+        width:50%;
+    }
+}
+
+/*============================================
+三つの丸のメニュー
+https://miya-system-works.com/blog/detail/html-sample-layout/
+============================================*/
+
+/* container */
+.menu{
+    width:100%;
+}
+.menu .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+.menu .content .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .menu .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.menu .content .list-item {
+    margin:50px 0px;
+    padding:0px 50px;
+    text-align:center;
+}
+@media (min-width: 992px) {
+    .menu .content .list-item {
+        margin:0px;
+        width:calc(100% / 3);
+    }
+}
+.menu .content .list-item .image{
+    display:block;
+    width:100%;
+    max-width:300px;
+    margin:0px auto 20px auto;
+    border-radius:100%;
+}
+.menu .content .list-item .title{
+    margin:0px 0px 10px 0px;
+    font-size: 24px;
+    line-height:1.8rem;
+    font-weight: 1.2rem;
+    color:#ffffff;
+}
+.menu .content .list-item .text{
+    font-size:18px;
+    line-height:1.8rem;
+    color:#ffffff;
+}
+
+/*============================================
+フッター
+https://copypet.jp/codedescription/2524/
+============================================*/
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.contents {
+	min-height: 100vh;
+	margin: auto;
+	padding: 1em 0 10em 0;
+	background: #ccdbdc;
+}
+footer #button {
+	position: relative;
+	width: 10em;
+	height: 2em;
+	margin: 0 auto;
+	padding: 0.2em;
+	cursor: pointer;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+	text-align: center;
+	color: #ccdbdc;
+	border-radius: 10px 10px 0px 0px;
+	background: #007ea7;
+}
+footer #button:hover {
+	position: relative;
+	width: 10em;
+	height: 2em;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer {
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 2em;
+	margin: 0 auto;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer:hover {
+	/* height: 17em; */
+	height: 13em;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer #container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #007ea7;
+}
+footer #cont {
+	margin: 0 auto;
+	padding: 1em 0em 0em 0em;
+	color: #ccdbdc;
+}
+footer .copyright {
+	float: left;
+	width: 100%;
+}
+footer .copyright p {
+	font-size: 0.7em;
+	line-height: 2em;
+	padding-left: 10%;
+	letter-spacing: 1px;
+	color: #ccdbdc;
+}
+div#leftf {
+	width:50%;		/*幅の指定*/
+	float:left;			/*サブメニューのカラムを左寄せにする*/
+	padding: 5px 0px 0px 0px;		/*上下、左右への余白*/
+}
+div#rightf {
+	width:auto;		/*幅の指定*/
+	float:left;			/*カラムを左寄せにする*/
+
+	border: dashed 2px #003249;/*破線 太さ 色*/
+	background: #004e98; /*背景色*/
+	padding: 5px 50px 0px 0px;		/*上下、左右への余白*/
+	-webkit-box-shadow: 0px 0px 3px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 0px 0px 3px #ccdbdc;			/*同上*/
+}
+div#leftf dd {
+	clear: both;
+	color: #ccdbdc;			/*見出しの文字色*/
+	padding: 0px 30px;		/*上下、左右への余白*/
+	margin-bottom: -3px;
+	font-size:18px;			/* フォントサイズ変更 */
+	font-weight: 1000;		/*日付を太字*/
+}
+div#rightf dt {
+	font-weight: 1000;	/*日付を太字*/
+	color: #ccdbdc;		/*見出しの文字色*/
+	padding: 0px 10px;		/*上下、左右への余白*/
+	margin-bottom: -3px;
+}
+div#rightf dd {
+	clear: both;
+	color: #ccdbdc;		/*見出しの文字色*/
+	padding: 0px 30px;		/*上下、左右への余白*/
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+div#last p {
+	clear:both;			/*回り込みを解除する*/
+	height:40px;			/*高さの指定*/
+	padding:10px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;		/*フォントサイズを小さくする*/
+	text-align:center;		/*センタリング*/
+}
+
+/* for box */
+#box {
+	width: 180%;					/*ブロックの幅を画面の90%にする設定。*/
+	max-width: 1000px;			/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
+	margin: 3% auto 50px;
+	padding: 2%;
+	background: #80ced7;			/*背景色（古いブラウザ用）*/
+	/* background: rgba(128, 206, 215, 0.4);	背景色。*/
+	background: rgba(0, 191, 255, 0.5);	/*背景色。*/
+	border-radius: 15px;	/*大きいほど角が丸くなる。*/
+	overflow: hidden;
+}

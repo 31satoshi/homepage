@@ -1,0 +1,276 @@
+@charset "utf-8";
+/*============================================
+スライドショー
+https://copypet.jp/648/
+============================================*/
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_cssslider {
+	width: 600px;
+	padding-top: 400px; /* 画像の高さ */
+	position: relative;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_cssslider > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.5s;
+	border-radius: 5px;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider input[name='cp_switch'] {
+	display: none;
+}
+/* サムネイル */
+.cp_cssslider label {
+	margin: 15px 5px 0 5px;
+	border: 2px solid #ccdbdc;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	opacity: 0.6;
+	border-radius: 5px;
+}
+.cp_cssslider label:hover {
+	opacity: 0.9;
+}
+.cp_cssslider label img {
+	display: block;
+	width: 90px;
+	border-radius: 5px;
+}
+.cp_cssslider input[name='cp_switch']:checked + label {
+	border: 2px solid #ff6700;
+	opacity: 1;
+}
+.cp_cssslider input[name='cp_switch'] ~ img {
+	opacity: 0;
+}
+.cp_cssslider input[name='cp_switch']:checked + label + img {
+	opacity: 1;
+}
+/*============================================
+「profile」
+============================================*/
+/*ブロック全体の設定*/
+#profile {
+    margin: 5px 0px 0px 0px;
+}
+#profile h2 {
+	background: #003249;	/*見出しの背景色*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+#profile dl {
+	padding: 0px 0px 0px 20px;		/*上下、左右への余白*/
+	margin: 0px 0px 15px 0px;
+	border: outset 3px #003249;/*破線 太さ 色*/
+	background: #007ea7; /*背景色*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+/*日付設定*/
+#profile dt {
+	font-weight: 1000;	/*日付を太字*/
+	float: left;
+	width: 12em;
+}
+/*記事設定*/
+#profile dd {
+	padding-left: 8em;
+	text-decoration: underline;
+}
+/*============================================
+「research」
+============================================*/
+/*ブロック全体の設定*/
+#research {
+    margin: 5px 0px 0px 0px;
+}
+#research h2 {
+	background: #003249;	/*見出しの背景色*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+#research dl {
+	padding: 0px 0px 0px 20px;		/*上下、左右への余白*/
+	margin: 0px 0px 15px 0px;
+	border: outset 3px #003249;/*破線 太さ 色*/
+	background: #007ea7; /*背景色*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+/*日付設定*/
+#research dt {
+	font-weight: 1000;	/*日付を太字*/
+	float: left;
+	width: 8em;
+}
+/*記事設定*/
+#research dd {
+	/* padding-left: 8em; */
+}
+/*============================================
+「news」
+============================================*/
+/*ブロック全体の設定*/
+#news {
+    margin: 5px 0px 0px 0px;
+}
+#news h2 {
+	background: #003249;	/*見出しの背景色*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+#news dl {
+	padding: 0px 0px 0px 20px;		/*上下、左右への余白*/
+	margin: 5px 0px 0px 0px;
+	border: outset 3px #003249;/*破線 太さ 色*/
+	background: #007ea7; /*背景色*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+/*日付設定*/
+#news dt {
+	font-weight: 1000;	/*日付を太字*/
+	float: left;
+	width: 8em;
+}
+/*記事設定*/
+#news dd {
+	padding-left: 8em;
+	text-decoration: underline;
+}
+/*============================================
+「link」
+============================================*/
+/*ブロック全体の設定*/
+#link {
+    margin: 5px 0px 0px 0px;
+}
+#link h2 {
+	background: #003249;	/*見出しの背景色*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+#link dl {
+	padding: 0px 0px 0px 20px;		/*上下、左右への余白*/
+	margin: 0px 0px 15px 0px;
+	border: outset 3px #003249;/*破線 太さ 色*/
+	background: #007ea7; /*背景色*/
+	border-radius: 5px;		/*大きいほど角が丸い*/
+	-webkit-box-shadow: 3px 3px 6px #ccdbdc;	/*影の設定。右へ・下へ・ぼかし幅・色の設定。*/
+	box-shadow: 3px 3px 6px #ccdbdc;			/*同上*/
+}
+/*日付設定*/
+#link dt {
+	font-weight: 1000;	/*日付を太字*/
+	float: left;
+	width: 8em;
+}
+/*記事設定*/
+#link dd {
+	padding-left: 8em;
+	text-decoration: underline;
+}
+/*============================================
+スマホ用(以下)
+============================================*/
+@media screen and (max-width:600px){
+	/*============================================
+	スライドショー(スマホ)
+	https://copypet.jp/648/
+	============================================*/
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	.cp_cssslider {
+		width: 300px;
+		padding-top: 200px; /* 画像の高さ */
+		position: relative;
+		margin: 2em auto;
+		text-align: center;
+	}
+	.cp_cssslider > img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: all 0.5s;
+		border-radius: 5px;
+		box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+	}
+	.cp_cssslider input[name='cp_switch'] {
+		display: none;
+	}
+	/* サムネイル */
+	.cp_cssslider label {
+		margin: 15px 5px 0 5px;
+		border: 2px solid #ccdbdc;
+		display: inline-block;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		opacity: 0.6;
+		border-radius: 5px;
+	}
+	.cp_cssslider label:hover {
+		opacity: 0.9;
+	}
+	.cp_cssslider label img {
+		display: block;
+		width: 40px;
+		border-radius: 5px;
+	}
+	.cp_cssslider input[name='cp_switch']:checked + label {
+		border: 2px solid #ff6700;
+		opacity: 1;
+	}
+	.cp_cssslider input[name='cp_switch'] ~ img {
+		opacity: 0;
+	}
+	.cp_cssslider input[name='cp_switch']:checked + label + img {
+		opacity: 1;
+	}
+	/*============================================
+	「profile」(スマホ)
+	============================================*/
+	/*記事設定*/
+	#profile dd {
+		clear: both;
+		padding-left: 1em;
+		text-decoration: underline;
+	}
+	/*============================================
+	「research」スマホ
+	============================================*/
+	/*記事設定*/
+	#research dd {
+		clear: both;
+		/* padding-left: 1em; */
+	}
+	/*============================================
+	「news」(スマホ)
+	============================================*/
+	/*記事設定*/
+	#news dd {
+		clear: both;
+		padding-left: 1em;
+		text-decoration: underline;
+	}
+	/*============================================
+	「link」(スマホ)
+	============================================*/
+	/*記事設定*/
+	#link dd {
+		clear: both;
+		padding-left: 1em;
+		text-decoration: underline;
+	}
+}
