@@ -90,13 +90,15 @@ https://miya-system-works.com/blog/detail/html-sample-layout/
 }
 /* content */
 .wrapper .content .heading{
-    margin:0px 0px 20px 0px;
+    margin:0px 0px 15px 0px;
     color:#ffffff;
     font-size: 54px;
     font-weight: normal;
     text-align: center;
+    line-height:1;		/* 行間変更 */
 }
-@media (min-width: 992px) {
+/*min-width: 992px*/
+@media (min-width:992px) {
     .wrapper .content .list {
         display: flex;
         align-items: center;
@@ -109,7 +111,7 @@ https://miya-system-works.com/blog/detail/html-sample-layout/
     color:#ffffff;
     text-align:center;
 }
-@media (min-width: 992px) {
+@media (min-width:992px) {
     .wrapper .content .list-item {
         width:50%;
     }
@@ -136,7 +138,7 @@ https://miya-system-works.com/blog/detail/html-sample-layout/
     font-weight: normal;
     text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width:992px) {
     .menu .content .list {
         display: flex;
         align-items: center;
@@ -145,10 +147,10 @@ https://miya-system-works.com/blog/detail/html-sample-layout/
 }
 .menu .content .list-item {
     margin:50px 0px;
-    padding:0px 50px;
+    padding:0px 30px;
     text-align:center;
 }
-@media (min-width: 992px) {
+@media (min-width:992px) {
     .menu .content .list-item {
         margin:0px;
         width:calc(100% / 3);
@@ -298,7 +300,7 @@ div#last p {
 
 /* for box */
 #box {
-	width: 180%;					/*ブロックの幅を画面の90%にする設定。*/
+	width: 80%;					/*ブロックの幅を画面の90%にする設定。*/
 	max-width: 1000px;			/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
 	margin: 3% auto 50px;
 	padding: 2%;
