@@ -90,9 +90,9 @@ https://miya-system-works.com/blog/detail/html-sample-layout/
 }
 /* content */
 .wrapper .content .heading{
-    margin:0px 0px 15px 0px;
+    margin:0px 0px 0px 0px;
     color:#ffffff;
-    font-size: 54px;
+    font-size: 48px;
     font-weight: normal;
     text-align: center;
     line-height:1;		/* 行間変更 */
@@ -298,7 +298,9 @@ div#last p {
 	text-align:center;		/*センタリング*/
 }
 
-/* for box */
+/*============================================
+背景(星空画像)と本文(半透明青)を重ねるやつ
+============================================*/
 #box {
 	width: 80%;					/*ブロックの幅を画面の90%にする設定。*/
 	max-width: 1000px;			/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
